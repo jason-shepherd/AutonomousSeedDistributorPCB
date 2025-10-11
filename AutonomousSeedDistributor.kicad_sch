@@ -1,5 +1,51 @@
-(kicad_sch (version 20231120) (generator "eeschema") (generator_version "8.0")
-  (paper "A4")
-  (lib_symbols)
-  (symbol_instances)
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "2f4a034c-8d2d-4528-8fc9-76e665033073")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 20.32 24.13)
+		(size 91.44 58.42)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "9dd0e49e-9fd7-43ba-89ba-9cfcf1e356cb")
+		(property "Sheetname" "Positioning and Communication"
+			(at 20.32 23.4184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PositionAndComms.kicad_sch"
+			(at 20.32 83.1346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "AutonomousSeedDistributor"
+				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
 )
