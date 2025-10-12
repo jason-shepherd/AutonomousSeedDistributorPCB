@@ -3824,7 +3824,7 @@
 		)
 		(uuid "e6fcce2d-be78-4770-b32a-8a5a971402fe")
 	)
-	(label "SDO"
+	(label "SDI"
 		(at 120.65 83.82 90)
 		(fields_autoplaced yes)
 		(effects
@@ -3982,7 +3982,7 @@
 			)
 		)
 	)
-	(global_label "GPIO_PC4"
+	(global_label "GPIO_PC2"
 		(shape input)
 		(at 251.46 124.46 0)
 		(fields_autoplaced yes)
@@ -5612,7 +5612,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "jshep:LCC-18"
 			(at 163.83 52.07 0)
 			(effects
 				(font
@@ -8209,7 +8209,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "jshep:uDFN-6"
 			(at 101.6 39.37 0)
 			(effects
 				(font
