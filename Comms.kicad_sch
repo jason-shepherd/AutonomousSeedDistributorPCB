@@ -3992,6 +3992,12 @@
 		(uuid "90414486-67a9-4f65-a501-0d34d2603b7d")
 	)
 	(junction
+		(at 264.16 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ad398622-1a1d-49d0-a062-742132fcb1fe")
+	)
+	(junction
 		(at 168.91 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4342,6 +4348,16 @@
 			(type default)
 		)
 		(uuid "3c813d29-af18-4f99-aef1-31756e2a6e16")
+	)
+	(wire
+		(pts
+			(xy 266.7 50.8) (xy 264.16 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3dff4bb4-f3be-4397-93e6-c24c8a6ca713")
 	)
 	(wire
 		(pts
@@ -4962,6 +4978,16 @@
 			(type default)
 		)
 		(uuid "c61abaaa-a537-4450-bbd6-8f7d11fdd0e9")
+	)
+	(wire
+		(pts
+			(xy 266.7 52.07) (xy 266.7 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c782af03-8125-416c-a453-246f62516771")
 	)
 	(wire
 		(pts
@@ -7892,6 +7918,72 @@
 			(project ""
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/9dd0e49e-9fd7-43ba-89ba-9cfcf1e356cb"
 					(reference "JP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDREF")
+		(at 266.7 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "727e1a5e-6777-4cab-907b-f1b8a3a2c8dc")
+		(property "Reference" "#PWR060"
+			(at 266.7 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 266.7 56.515 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 266.7 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 266.7 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
+			(at 266.7 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a32a424e-d81a-49a7-8c5f-27442df247d5")
+		)
+		(instances
+			(project "AutonomousSeedDistributor"
+				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/9dd0e49e-9fd7-43ba-89ba-9cfcf1e356cb"
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
