@@ -2819,6 +2819,10 @@
 		(at 139.7 48.26)
 		(uuid "e1336bc0-6ec6-4fd8-932f-22f3ee2e778c")
 	)
+	(no_connect
+		(at 163.83 50.8)
+		(uuid "e3a6b4b1-54f0-4e08-80ec-a5432c34f0e7")
+	)
 	(wire
 		(pts
 			(xy 227.33 124.46) (xy 231.14 124.46)
@@ -3561,16 +3565,6 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 50.8) (xy 170.18 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c8e13595-9a89-44f7-99a2-57cd36a0ab55")
-	)
-	(wire
-		(pts
 			(xy 247.65 124.46) (xy 251.46 124.46)
 		)
 		(stroke
@@ -3901,29 +3895,7 @@
 			)
 		)
 	)
-	(global_label "B1"
-		(shape input)
-		(at 170.18 50.8 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1f55f79f-2186-4ce5-9f70-57d06fbb6b95")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 175.6447 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "UART4_TX"
+	(global_label "UART2_TX"
 		(shape input)
 		(at 170.18 55.88 0)
 		(fields_autoplaced yes)
@@ -3989,29 +3961,7 @@
 			)
 		)
 	)
-	(global_label "B2"
-		(shape input)
-		(at 251.46 124.46 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "63521680-f16b-4056-a7ad-9d3309674129")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 256.9247 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "UART4_RX"
+	(global_label "UART2_RX"
 		(shape input)
 		(at 170.18 53.34 0)
 		(fields_autoplaced yes)
@@ -4033,7 +3983,29 @@
 			)
 		)
 	)
-	(global_label "B8"
+	(global_label "IMU_nCS"
+		(shape input)
+		(at 251.46 124.46 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c7fdcfbb-65c7-493a-9057-8f2d9f76f95c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 262.428 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "IMU_INT"
 		(shape input)
 		(at 251.46 149.86 0)
 		(fields_autoplaced yes)
@@ -4043,9 +4015,9 @@
 			)
 			(justify left)
 		)
-		(uuid "e661b434-b954-411e-86c2-728b99228584")
+		(uuid "d4d6cb91-501c-4f5e-b4ec-de74478e7ca6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 256.9247 149.86 0)
+			(at 261.7024 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4064,7 +4036,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "01a1a792-3e21-484e-afb3-616d64847bbb")
-		(property "Reference" "#PWR056"
+		(property "Reference" "#PWR027"
 			(at 231.14 44.45 0)
 			(effects
 				(font
@@ -4114,7 +4086,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "#PWR056")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -4262,7 +4234,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0b745544-64ba-4e1a-85ca-63b2d5da07ba")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR05"
 			(at 80.01 93.98 0)
 			(effects
 				(font
@@ -4312,7 +4284,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "#PWR043")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -4327,7 +4299,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1615a3eb-4611-44f5-8862-ba17e21b3a30")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR017"
 			(at 151.13 115.57 0)
 			(effects
 				(font
@@ -4377,7 +4349,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "#PWR037")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -4392,7 +4364,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "17093e42-b989-4b49-9e84-e8b80d9083fa")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR08"
 			(at 120.65 151.13 0)
 			(effects
 				(font
@@ -4442,7 +4414,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "#PWR045")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -4457,7 +4429,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1926e90e-e96a-4929-b250-6f0b1a04d511")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR02"
 			(at 52.07 104.14 0)
 			(effects
 				(font
@@ -4508,7 +4480,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "#PWR040")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -4523,7 +4495,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1e831ad6-3294-4438-8a85-224bf6549d38")
-		(property "Reference" "R11"
+		(property "Reference" "R2"
 			(at 222.885 146.05 90)
 			(effects
 				(font
@@ -4531,7 +4503,7 @@
 				)
 			)
 		)
-		(property "Value" "2.2kR"
+		(property "Value" "10kR"
 			(at 224.79 146.05 90)
 			(effects
 				(font
@@ -4575,7 +4547,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "R11")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -4590,7 +4562,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "29393388-bc39-419e-8ee4-fe3c02005ca1")
-		(property "Reference" "R8"
+		(property "Reference" "R3"
 			(at 224.155 95.25 90)
 			(effects
 				(font
@@ -4598,7 +4570,7 @@
 				)
 			)
 		)
-		(property "Value" "2.2kR"
+		(property "Value" "10kR"
 			(at 226.06 95.25 90)
 			(effects
 				(font
@@ -4642,7 +4614,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "R8")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -4657,7 +4629,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2b726d11-6f6c-4284-8f06-a10b1c9e6f00")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR04"
 			(at 80.01 60.96 0)
 			(effects
 				(font
@@ -4708,7 +4680,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "#PWR036")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -4723,7 +4695,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2b9ca54a-1ddf-4f69-bb37-24718027561b")
-		(property "Reference" "C14"
+		(property "Reference" "C8"
 			(at 193.675 34.925 90)
 			(effects
 				(font
@@ -4775,7 +4747,7 @@
 		(instances
 			(project ""
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "C14")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -4859,7 +4831,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4123ee3a-f663-4071-b878-31b59a76ef27")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR012"
 			(at 130.81 129.54 0)
 			(effects
 				(font
@@ -4910,7 +4882,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "#PWR046")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -4925,7 +4897,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "47b042e5-417e-4f24-beb1-701d3ff3581a")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR01"
 			(at 52.07 93.98 0)
 			(effects
 				(font
@@ -4975,7 +4947,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "#PWR042")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -4990,7 +4962,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "48da981d-3e3d-4928-b160-e17cbad879fd")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR011"
 			(at 128.27 165.1 0)
 			(effects
 				(font
@@ -5041,7 +5013,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "#PWR039")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -5057,7 +5029,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4ac1241c-3201-4244-970e-1f74a350b7d2")
-		(property "Reference" "Q1"
+		(property "Reference" "Q3"
 			(at 237.49 102.87 90)
 			(effects
 				(font
@@ -5065,7 +5037,7 @@
 				)
 			)
 		)
-		(property "Value" "SELECT PART"
+		(property "Value" "BSS138"
 			(at 237.49 105.41 90)
 			(effects
 				(font
@@ -5115,7 +5087,7 @@
 		(instances
 			(project ""
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "Q1")
+					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -5130,7 +5102,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4c5a0207-49dc-4002-9ce9-9342c068a129")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR030"
 			(at 248.92 96.52 0)
 			(effects
 				(font
@@ -5180,7 +5152,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "#PWR049")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -5196,7 +5168,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4c6558a5-b304-4ac7-8758-588c678b0eb8")
-		(property "Reference" "U5"
+		(property "Reference" "U1"
 			(at 67.31 86.36 0)
 			(effects
 				(font
@@ -5257,7 +5229,7 @@
 		(instances
 			(project ""
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "U5")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -5272,7 +5244,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4ddf16d2-c9ff-4419-885a-4f2402f4c147")
-		(property "Reference" "#PWR057"
+		(property "Reference" "#PWR032"
 			(at 251.46 49.53 0)
 			(effects
 				(font
@@ -5322,7 +5294,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "#PWR057")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -5337,7 +5309,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4e77d674-015c-4b83-8dc7-f0e1556b1ffc")
-		(property "Reference" "C16"
+		(property "Reference" "C3"
 			(at 86.36 48.895 90)
 			(effects
 				(font
@@ -5389,7 +5361,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "C16")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -5404,7 +5376,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "50296c29-8285-4f2c-9037-cf4d22bebb42")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR026"
 			(at 229.87 67.31 0)
 			(effects
 				(font
@@ -5454,7 +5426,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "#PWR054")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -5469,7 +5441,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5a39016e-8e02-479a-824b-06d9deb816fb")
-		(property "Reference" "C19"
+		(property "Reference" "C2"
 			(at 84.455 93.98 0)
 			(effects
 				(font
@@ -5521,7 +5493,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "C19")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -5536,7 +5508,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "639ed9dd-47a5-4132-a733-cdcd47c0977f")
-		(property "Reference" "R12"
+		(property "Reference" "R6"
 			(at 243.205 146.05 90)
 			(effects
 				(font
@@ -5544,7 +5516,7 @@
 				)
 			)
 		)
-		(property "Value" "2.2kR"
+		(property "Value" "10kR"
 			(at 245.11 146.05 90)
 			(effects
 				(font
@@ -5588,7 +5560,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "R12")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -5603,7 +5575,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "662af225-8686-4a88-9d64-349bcb89408f")
-		(property "Reference" "U2"
+		(property "Reference" "U4"
 			(at 143.51 34.29 0)
 			(effects
 				(font
@@ -5617,6 +5589,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "jshep:LCC-18"
@@ -5703,7 +5676,7 @@
 		(instances
 			(project ""
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "U2")
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -5718,7 +5691,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6fff24b0-8042-47a6-a343-f867c8df37ce")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR022"
 			(at 198.12 46.99 0)
 			(effects
 				(font
@@ -5769,7 +5742,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "#PWR031")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -5784,7 +5757,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "70451d9f-836a-403f-abf9-9aee3e835811")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR013"
 			(at 132.08 41.91 0)
 			(effects
 				(font
@@ -5835,7 +5808,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "#PWR032")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -5850,7 +5823,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "77df6591-8dd8-4af2-96af-c1df3257f0f0")
-		(property "Reference" "R18"
+		(property "Reference" "R9"
 			(at 247.015 48.26 90)
 			(effects
 				(font
@@ -5858,7 +5831,7 @@
 				)
 			)
 		)
-		(property "Value" "2.2kR"
+		(property "Value" "10kR"
 			(at 248.92 48.26 90)
 			(effects
 				(font
@@ -5902,7 +5875,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "R18")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -5984,7 +5957,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7c7bb889-6348-483d-a597-882fa829bb83")
-		(property "Reference" "R10"
+		(property "Reference" "R7"
 			(at 244.475 95.25 90)
 			(effects
 				(font
@@ -5992,7 +5965,7 @@
 				)
 			)
 		)
-		(property "Value" "2.2kR"
+		(property "Value" "10kR"
 			(at 246.38 95.25 90)
 			(effects
 				(font
@@ -6036,7 +6009,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "R10")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -6051,7 +6024,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7cb3b798-317d-4362-a7ca-803deaff8cb1")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR023"
 			(at 227.33 116.84 0)
 			(effects
 				(font
@@ -6101,7 +6074,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "#PWR052")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -6125,7 +6098,7 @@
 				)
 			)
 		)
-		(property "Value" "SELECT PART"
+		(property "Value" "BSS138"
 			(at 238.76 81.28 90)
 			(effects
 				(font
@@ -6190,7 +6163,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7dfc53bf-8376-442f-96e1-d2dcc2148e8c")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR015"
 			(at 135.89 49.53 0)
 			(effects
 				(font
@@ -6241,7 +6214,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "#PWR030")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -6256,7 +6229,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "803c9e95-3409-4e39-b234-a9039faa5a50")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR020"
 			(at 189.23 36.83 0)
 			(effects
 				(font
@@ -6306,7 +6279,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "#PWR026")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -6321,7 +6294,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "80a16960-9676-4d8b-882a-893a971bfbe3")
-		(property "Reference" "C21"
+		(property "Reference" "C4"
 			(at 116.84 150.495 0)
 			(effects
 				(font
@@ -6373,7 +6346,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "C21")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -6388,7 +6361,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "80fd8514-d8f1-4495-b63a-ada2945307b3")
-		(property "Reference" "R14"
+		(property "Reference" "R5"
 			(at 243.205 120.65 90)
 			(effects
 				(font
@@ -6396,7 +6369,7 @@
 				)
 			)
 		)
-		(property "Value" "2.2kR"
+		(property "Value" "10kR"
 			(at 245.11 120.65 90)
 			(effects
 				(font
@@ -6440,7 +6413,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "R14")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -6455,7 +6428,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8655d249-b8e2-485d-bdf6-91111995082b")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR014"
 			(at 134.62 86.36 0)
 			(effects
 				(font
@@ -6506,7 +6479,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "#PWR047")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -6530,7 +6503,7 @@
 				)
 			)
 		)
-		(property "Value" "SELECT PART"
+		(property "Value" "BSS138"
 			(at 236.22 156.21 90)
 			(effects
 				(font
@@ -6595,7 +6568,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9e007fbd-d96e-454d-8e7e-ebb84e62c205")
-		(property "Reference" "C20"
+		(property "Reference" "C1"
 			(at 56.515 93.98 0)
 			(effects
 				(font
@@ -6647,7 +6620,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "C20")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -6662,7 +6635,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a01bd7b3-5bac-4b16-abf7-58e571e2eb56")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR025"
 			(at 228.6 91.44 0)
 			(effects
 				(font
@@ -6712,7 +6685,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "#PWR048")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -6727,7 +6700,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a14a9bf0-5a88-40f4-834f-bccb6745c644")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR07"
 			(at 93.98 46.99 0)
 			(effects
 				(font
@@ -6778,7 +6751,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "#PWR035")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -6863,7 +6836,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b35d1e6a-aedf-44cf-8486-9a5b39551056")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR018"
 			(at 151.13 127 0)
 			(effects
 				(font
@@ -6914,7 +6887,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "#PWR038")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -6929,7 +6902,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b36285ee-8a1d-453e-8501-b5916385226d")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR03"
 			(at 67.31 109.22 0)
 			(effects
 				(font
@@ -6980,7 +6953,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "#PWR044")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -6995,7 +6968,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b5504c59-f131-49f6-bddb-189874db3609")
-		(property "Reference" "R15"
+		(property "Reference" "R4"
 			(at 225.425 71.12 90)
 			(effects
 				(font
@@ -7003,7 +6976,7 @@
 				)
 			)
 		)
-		(property "Value" "2.2kR"
+		(property "Value" "10kR"
 			(at 227.33 71.12 90)
 			(effects
 				(font
@@ -7047,7 +7020,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "R15")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -7062,7 +7035,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b77d9f4c-101b-411e-99c2-d9b131e8dbaf")
-		(property "Reference" "C15"
+		(property "Reference" "C5"
 			(at 121.285 48.26 0)
 			(effects
 				(font
@@ -7114,7 +7087,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "C15")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -7129,7 +7102,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b90472c9-5a2b-4e1f-b5a0-2f8c97b55189")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR09"
 			(at 125.73 49.53 0)
 			(effects
 				(font
@@ -7179,7 +7152,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "#PWR034")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -7194,7 +7167,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b932ccec-9044-4b90-b791-937c31c6c67e")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR029"
 			(at 247.65 147.32 0)
 			(effects
 				(font
@@ -7244,7 +7217,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "#PWR051")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -7259,7 +7232,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c5315e97-d8d9-47a2-a6df-c7fda837e85e")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR028"
 			(at 247.65 121.92 0)
 			(effects
 				(font
@@ -7309,7 +7282,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "#PWR053")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -7324,7 +7297,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c75f407c-4f68-43dd-944e-7112968eb5fb")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR019"
 			(at 170.18 64.77 0)
 			(effects
 				(font
@@ -7375,7 +7348,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "#PWR029")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -7390,7 +7363,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d43d31ed-1a05-4ffc-8d06-1a06b45a9318")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR024"
 			(at 227.33 142.24 0)
 			(effects
 				(font
@@ -7440,7 +7413,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "#PWR050")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -7455,7 +7428,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d5a58d9e-ea71-4fef-9383-1fff4db04740")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR06"
 			(at 80.01 104.14 0)
 			(effects
 				(font
@@ -7506,7 +7479,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "#PWR041")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -7521,7 +7494,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "de70c696-944a-410a-810d-b0d13d36e8a8")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR021"
 			(at 194.31 59.69 0)
 			(effects
 				(font
@@ -7572,7 +7545,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "#PWR028")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -7587,7 +7560,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e0a48212-8baf-416f-b049-a5ad0070db04")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR016"
 			(at 151.13 105.41 0)
 			(effects
 				(font
@@ -7638,7 +7611,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "#PWR027")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -7654,7 +7627,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e1cad9eb-2a8e-43a2-84bf-17f47f21da0a")
-		(property "Reference" "Q3"
+		(property "Reference" "Q1"
 			(at 236.22 128.27 90)
 			(effects
 				(font
@@ -7662,7 +7635,7 @@
 				)
 			)
 		)
-		(property "Value" "SELECT PART"
+		(property "Value" "BSS138"
 			(at 236.22 130.81 90)
 			(effects
 				(font
@@ -7712,7 +7685,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "Q3")
+					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -7727,7 +7700,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "eac77bf2-d480-4a75-ac37-9b98e1305955")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR010"
 			(at 125.73 60.96 0)
 			(effects
 				(font
@@ -7778,7 +7751,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "#PWR033")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -7793,7 +7766,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "eeae08a8-8281-4645-a102-edf850999e75")
-		(property "Reference" "R16"
+		(property "Reference" "R8"
 			(at 245.745 71.12 90)
 			(effects
 				(font
@@ -7801,7 +7774,7 @@
 				)
 			)
 		)
-		(property "Value" "2.2kR"
+		(property "Value" "10kR"
 			(at 247.65 71.12 90)
 			(effects
 				(font
@@ -7845,7 +7818,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "R16")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -7869,7 +7842,7 @@
 				)
 			)
 		)
-		(property "Value" "SELECT PART"
+		(property "Value" "BSS138"
 			(at 240.03 58.42 90)
 			(effects
 				(font
@@ -7934,7 +7907,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ef3d91d7-f9c5-4e3d-95fa-cbfaf89dff62")
-		(property "Reference" "C17"
+		(property "Reference" "C7"
 			(at 146.685 115.57 0)
 			(effects
 				(font
@@ -7986,7 +7959,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "C17")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -8001,7 +7974,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f0d57166-362e-4ecd-89a8-332c920267b2")
-		(property "Reference" "C18"
+		(property "Reference" "C6"
 			(at 131.445 153.035 0)
 			(effects
 				(font
@@ -8053,7 +8026,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "C18")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -8068,7 +8041,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f5d4a947-f5b2-4509-a52c-8c9340149aa0")
-		(property "Reference" "R13"
+		(property "Reference" "R1"
 			(at 222.885 120.65 90)
 			(effects
 				(font
@@ -8076,7 +8049,7 @@
 				)
 			)
 		)
-		(property "Value" "2.2kR"
+		(property "Value" "10kR"
 			(at 224.79 120.65 90)
 			(effects
 				(font
@@ -8120,7 +8093,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "R13")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -8135,7 +8108,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f95e72c0-dbf3-4f85-baff-d017cd20efe8")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR031"
 			(at 250.19 72.39 0)
 			(effects
 				(font
@@ -8185,7 +8158,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "#PWR055")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -8200,7 +8173,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fa2a5c0a-8992-4209-97c4-d3cc8c0a25f0")
-		(property "Reference" "U4"
+		(property "Reference" "U2"
 			(at 105.41 36.83 0)
 			(effects
 				(font
@@ -8264,7 +8237,7 @@
 		(instances
 			(project ""
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "U4")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -8279,7 +8252,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fa620269-8812-4df1-a4ba-01470c348647")
-		(property "Reference" "R17"
+		(property "Reference" "R30"
 			(at 226.695 48.26 90)
 			(effects
 				(font
@@ -8331,7 +8304,7 @@
 		(instances
 			(project "AutonomousSeedDistributor"
 				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073/70911fbe-e753-4bcd-807c-2cd29b7fc40a"
-					(reference "R17")
+					(reference "R30")
 					(unit 1)
 				)
 			)

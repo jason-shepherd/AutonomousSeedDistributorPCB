@@ -6,7 +6,7 @@
 	(paper "A4")
 	(lib_symbols)
 	(sheet
-		(at 20.32 92.71)
+		(at 17.78 16.51)
 		(size 135.89 97.79)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22,7 +22,7 @@
 		)
 		(uuid "47790728-4ec9-4d46-be5f-5e9635f92247")
 		(property "Sheetname" "McuAndPower"
-			(at 20.32 91.9984 0)
+			(at 17.78 15.7984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31,7 +31,7 @@
 			)
 		)
 		(property "Sheetfile" "McuAndPower.kicad_sch"
-			(at 20.32 191.0846 0)
+			(at 17.78 114.8846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -48,8 +48,8 @@
 		)
 	)
 	(sheet
-		(at 157.48 92.71)
-		(size 121.92 68.58)
+		(at 19.05 120.65)
+		(size 134.62 69.85)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -64,7 +64,7 @@
 		)
 		(uuid "70911fbe-e753-4bcd-807c-2cd29b7fc40a")
 		(property "Sheetname" "Positioning"
-			(at 157.48 91.9984 0)
+			(at 19.05 119.9384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -73,7 +73,7 @@
 			)
 		)
 		(property "Sheetfile" "Positioning.kicad_sch"
-			(at 157.48 161.8746 0)
+			(at 19.05 191.0846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -90,50 +90,8 @@
 		)
 	)
 	(sheet
-		(at 20.32 17.78)
-		(size 135.89 69.85)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "9dd0e49e-9fd7-43ba-89ba-9cfcf1e356cb")
-		(property "Sheetname" "Communication"
-			(at 20.32 17.0684 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Comms.kicad_sch"
-			(at 20.32 88.2146 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "AutonomousSeedDistributor"
-				(path "/2f4a034c-8d2d-4528-8fc9-76e665033073"
-					(page "2")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 157.48 17.78)
-		(size 121.92 68.58)
+		(size 121.92 140.97)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -157,7 +115,7 @@
 			)
 		)
 		(property "Sheetfile" "MotroControl.kicad_sch"
-			(at 157.48 86.9446 0)
+			(at 157.48 159.3346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
